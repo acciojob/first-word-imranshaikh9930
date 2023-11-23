@@ -4,13 +4,17 @@ function firstWord(s) {
 	if(s.length === 0 || !s.includes(" ")){
 		return s
 	}
-	
-	const firstIndex = s.indexOf(" ");
+	else{
+		const firstIndex = s.indexOf(" ");
 	const sliceed = s.slice(0,firstIndex);
 	return sliceed;
+	}
+	
+	
+	
 }
 
 // Do not change the code below
 
-const s = prompt("Enter String:");
+const s = prompt("Enter String:")
 alert(firstWord(s))
