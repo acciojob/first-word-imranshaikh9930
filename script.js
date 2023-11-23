@@ -4,6 +4,7 @@ function firstWord(s) {
 	if (s.length === 0 || !s.includes(" ")) {
     return s;
   } else {
+       s=  s.trim(" ");
     const firstSpaceIndex = s.indexOf(" ");
     const firstWord = s.slice(0, firstSpaceIndex);
     return firstWord;
@@ -16,4 +17,4 @@ function firstWord(s) {
 // Do not change the code below
 
 const s = prompt("Enter String:")
-alert(firstWord(s))
+alert(firstWord(s));
